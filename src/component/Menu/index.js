@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { WechatOutlined, 
+import { useNavigate } from 'react-router';
+import { 
+         WechatOutlined, 
          DesktopOutlined,
          ShoppingFilled,
          UserOutlined,
@@ -41,7 +43,7 @@ const items = [
     }
   },
   {
-    key: 'administrator',
+    key: 'community',
     icon: <DesktopOutlined style={{fontSize: 24}}/>,
     style:{
       paddingLeft: 15
@@ -50,9 +52,29 @@ const items = [
 
 ];
 const MyMeun = () => {
-  const [current, setCurrent] = useState('shopping');
+  const [current, setCurrent] = useState('');
+  const navigate = useNavigate();
   const onClick = (e) => {
-    console.log('click ', e);
+    switch(e.key) {
+      case 'shopping': 
+      navigate('/main/shopping');
+      break;
+      case 'message': 
+      navigate('/main/chat');
+      break;
+      case 'person':
+        navigate('/main/person');
+        break;
+      case 'publish': 
+        navigate('/main/publish');
+        break;
+      case 'community': 
+        navigate('/main/community');
+        break;
+      default :
+      navigate('/');
+      break;
+    }
     setCurrent(e.key);
   };
   return (

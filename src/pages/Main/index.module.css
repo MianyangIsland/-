@@ -21,4 +21,8 @@
 .view{
     width: 890px;
     height: 100%;
+    background-image: url('../../static/imgs/schoolLog.png');
+    background-size: 100px;
+    background-position:center;
+    background-repeat: no-repeat;
 }

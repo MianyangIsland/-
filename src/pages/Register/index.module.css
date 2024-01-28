@@ -1,18 +1,18 @@
-.login_view{
+.register_view{
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('../../static/imgs/Login.png');
-    background-repeat: no-repeat;
+    background-image: url('../../static/imgs/register.png');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.login_form{
+.register_form{
     position: absolute;
     width: 400px;
     height: 300px;
-    right: 50px;
     top: 200px;
-    background-color: rgb(0, 0 , 0,0.5);
+    right: 50px;
+    background-color: rgb(0.2, 0.3, 0.4, 0.4);
     border-radius: 10px;
 }
