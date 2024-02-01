@@ -3,9 +3,11 @@ import styles from './index.module.css';
 
 const Person = () => {
     return (
-        <>
-         个人信息页面
-        </>
+       <div className={styles.person_view}>
+          <div className={styles.person_message}>
+
+          </div>
+       </div>
     )
 }
 

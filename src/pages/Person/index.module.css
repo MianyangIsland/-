@@ -1,0 +1,12 @@
+.person_view{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.person_message{
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.504);
+}
